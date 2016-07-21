@@ -1,9 +1,9 @@
 'use strict';
 
 class Delay {
-  static wait(timeout) {
+  static wait(timeout, value) {
     return new Promise((resolve) => {
-      setTimeout(resolve, timeout);
+      setTimeout(() => resolve(value), timeout);
     });
   };
 }
