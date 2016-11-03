@@ -1,23 +1,18 @@
 'use strict';
 
-var sinon = require('sinon');
+require('co-mocha');
+let sinon = require('sinon');
 
-var chai = require('chai');
-var sinonChai = require('sinon-chai');
-var chaiSubset = require('chai-subset');
-var chaiAsPromised = require('chai-as-promised');
+let chai = require('chai');
+let sinonChai = require('sinon-chai');
 
-chai.use(chaiAsPromised);
-chai.use(chaiSubset);
 chai.use(sinonChai);
 global.expect = chai.expect;
-
+global.sinon = sinon;
 
 beforeEach(function() {
-  this.sinon = sinon;
   this.sandbox = sinon.sandbox.create();
 });
-
 
 afterEach(function() {
   this.sandbox.restore();
