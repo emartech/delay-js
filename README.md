@@ -6,7 +6,7 @@ delay-js resolves a Promise with a given value after its timer is over.
 
 
 ```js
-const Delay = require('@emartech/delay-js');
+const Delay = require('@emartech/delay');
 Delay.wait(1000);
 ```
 
