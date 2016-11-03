@@ -1,10 +1,10 @@
 {
-  "name": "@emartech/delay-js",
+  "name": "@emartech/delay",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --harmony --require co-mocha $(find . -name \"*.spec.js\" -not -path \"./node_modules/*\")",
-    "code-style": "eslint $(find . -name \"*.js\" -not -path \"./node_modules/*\")",
+    "test": "mocha test-setup.spec.js src --recursive",
+    "code-style": "eslint src/",
     "validate-commit-msg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/emartech/delay-js.git"
   },
-  "author": "Emarsys Custom Development Team <SUITE-HU-BUD-CD1@emarsys.com>",
+  "author": "Emarsys",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/emartech/delay-js/issues"
@@ -30,18 +30,15 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "3.5.0",
-    "chai-as-promised": "5.3.0",
-    "chai-subset": "1.3.0",
-    "co-mocha": "1.1.2",
-    "eslint": "3.1.1",
+    "co-mocha": "1.1.3",
+    "eslint": "3.9.1",
     "eslint-config-emarsys": "4.0.0",
     "eslint-plugin-no-only-tests": "1.1.0",
     "eslint-plugin-security": "1.2.0",
-    "mocha": "2.5.3",
-    "nock": "8.0.0",
+    "mocha": "3.1.2",
     "pre-commit": "1.1.3",
     "semantic-release": "4.3.5",
-    "sinon": "1.17.4",
+    "sinon": "1.17.6",
     "sinon-chai": "2.8.0",
     "validate-commit-message": "3.0.1"
   }

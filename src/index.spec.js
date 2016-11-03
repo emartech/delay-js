@@ -10,7 +10,7 @@ describe('Delay', () => {
 
       const waitPromise = Delay.wait(1000);
 
-      expect(global.setTimeout).to.have.been.calledWith(this.sinon.match.func, 1000);
+      expect(global.setTimeout).to.have.been.calledWith(sinon.match.func, 1000);
       yield waitPromise;
     });
 
