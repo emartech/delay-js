@@ -1,6 +1,7 @@
 {
   "name": "@emartech/delay",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Promise based delay",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test-setup.spec.js src --recursive",
