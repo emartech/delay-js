@@ -19,7 +19,7 @@
     "url": "git+https://github.com/emartech/delay-js.git"
   },
   "author": "Emarsys",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/emartech/delay-js/issues"
   },
